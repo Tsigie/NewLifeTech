@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Life Technologies Pseudo Code Assessment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* { box-sizing: border-box; } 
+body { margin: 0; } 
+.navbar { overflow: hidden; background-color: purple; font-family: Arial, Helvetica, sans-serif;
+} 
+.navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .header {
+    background: green;
+    padding: 16px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: rgb(204, 204, 204);
+    height: 250px;
+}
+
+.column a {
+    float: none;
+    color: blueviolet;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other 
+instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a href="#home">
+    <span style="font-size:30px;cursor:pointer" 
+    onclick="openNav()">&#9776; </span>
+</a>
+<style>
+ body { 
+     font-family: "Lato", sans-serif; } 
+ .sidenav { 
+     height: 100%; width: 0; 
+     position: fixed; 
+     z-index: 1; 
+     top: 0; left:0; 
+     background-color: #111; 
+     overflow-x: hidden; 
+     transition: 0.5s; 
+     padding-top: 60px; } 
+.sidenav a { 
+    padding: 8px 8px 8px 32px;
+    text-decoration: none; 
+    font-size: 25px; 
+    color: #818181; 
+    display: block; 
+    transition: 0.3s; } 
+.sidenav a:hover { 
+    color: #f1f1f1;
+} 
+.sidenav .closebtn { 
+    position: absolute; 
+    top: 0; right: 25px; 
+    font-size: 36px; 
+    margin-left: 50px; } 
+@media screen and (max-height:450px) { 
+.sidenav {
+    padding-top: 15px;} 
+.sidenav a {
+    font-size: 18px;} 
+}
+</style>  
+</head>
+ <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+</div>
+
+<!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+   <div class="dropdown">
+    <button class="dropbtn">Forms
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Tax Form</h2>
+      </div> 
+
+      <div class="row">
+        <div class="column">
+<h3>User Input</h3>
+<p>Fill out your inf</p>
+          <a href="#">
+              <form action="/action_page" method="post">
+            Amount:
+            <input amount="amount" type="text" amount="famount" required>
+            Name:
+            <input name="name" type="text" name="fname" required>
+            Address:
+            <input address="address" type="text" address="faddress" required>
+            State:
+            <input state="state" type="text" state="fstate" required>
+            <input type="submit" value="Submit">
+        </form>
+</a>
+          <a href="#">Form 2
+              <form action="/action_page" method="post">
+            <input type="Amount" amount="fname" required>
+            <input type="Name" name="fname" required>
+            <input type="Address" address="fname" required>
+            <input type="State" state="fname" required>
+            <input type="submit" value="Submit">
+        </form>
+
+    </a>
+          <a href="#">Form 3
+              <form action="/action_page" method="post">
+            <input type="text" amount="fname" required>
+            <input type="text" name="fname" required>
+            <input type="text" address="fname" required>
+            <input type="text" state="fname" required>
+            <input type="submit" value="Submit">
+        </form>
+</a>
+        </div>
+        <div class="column">
+<h3>State Tax Info</h3>
+<p>Your State Tax Information can be found here.</p>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+<h3>Manage your payment plan online</h3>
+<p>You can now view and make changes to your existing payment plan through your online services account.</p>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div style="padding:16px">
+<h3>Responsive Tax Form(Pseudo Code Assessment)</h3>
+<p>Answer: 1) The form collects information or data such as name, address, and state from users to determind how much tax is applied
+    to each states from each individuals.</p>
+  
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="/.form.js"></script>
+</body>
+</html>
